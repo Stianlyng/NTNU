@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap");
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+body {
+  background: #edf2f7;
+  padding: 2rem;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #4c4c4c;
+  line-height: 1.5;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.top {
+  margin: 2rem auto 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.top-text {
+  text-align: center;
+  max-width: 450px;
+  width: 100%;
+}
+.top strong {
+  font-weight: 600;
+}
+
+.term {
+    background-color: #263238;
+    max-width: 700px;
+    width: 100%;
+    border-radius: 0.3rem;
+    padding-left: 0.5rem;
+    height: 19em;
+    
+}
+
+.term-text {
+    margin-top: 0.5em;
+    color: #fff;
+    height: 16.5em;
+    width: 100%;
+    overflow-y: scroll;
+}
+
+.traffic-lights {
+    top: 1px;
+    left: 8px;
+  }
+  
+.traffic-light {
+border-radius: 100%;
+padding: 0;
+height: 12px;
+width: 12px;
+border: 1px solid rgba(0, 0, 0, 0.06);
+box-sizing: border-box;
+margin-right: 3.5px;
+background-color: #ddd;
+position: relative;
+outline: none;
+}
+
+
+
+h1 {
+font-size: 1.5rem;
+font-weight: 600;
+margin: 0;
+padding: 0;
+}
+
+h2 {
+font-size: 1.25rem;
+font-weight: 300;
+margin: 0;
+padding: 0;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 0.5rem;
+  min-height: 10rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  padding: 1rem;
+  height: 4rem;
+  text-align: center;
+}
+
+.cards {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 1rem; 
+}
+
+#one {
+    background-image: url("https://images.unsplash.com/photo-1673903069929-3fe81178638b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1615&q=80"); /* The image used */
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+footer {
+  /* bottom of the page */
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #263238;
+    color: white;
+    text-align: center;
+}
+
+/* Screen larger than 600px? 2 column */
+@media (min-width: 600px) {
+  .cards { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* Screen larger than 900px? 3 columns */
+@media (min-width: 900px) {
+  .cards { grid-template-columns: repeat(3, 1fr); }
+}

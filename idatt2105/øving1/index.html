@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My HTML Site</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+  <body>
+<!-- Simple responsive grid that use css-variable scoping to define gap and grid-size -->
+<!-- Based of this great article by Evan Minto - https://evanminto.com/blog/intrinsically-responsive-css-grid-minmax-min/ -->
+
+<div class="container">
+   
+  <div class="top">
+    <p class="top-text">
+      En øving i <strong>fullstack applikasjonsutvikling</strong>, ved NTNU <strong>vinteren 2023</strong> En kjapp og fleksibel side med responsiv css layout og noe javascript!
+    </p>
+
+    <div class="term">
+      
+      <div class="traffic-lights">
+        <button class="traffic-light traffic-light-close" id="close" style="  background-color: #ff6159;"></button>
+        <button class="traffic-light traffic-light-minimize" id="minimize" style="background-color: #ffbd2e;"></button>
+        <button class="traffic-light traffic-light-maximize" id="maximize" style="  background-color: #28c941;"></button>
+      </div>
+
+      <div class="term-text">
+        <h1>Øving 1 - HTML, CSS og JavaScript</h1>
+        <h2>Lag en webside med egne div'er for</h2>
+        <ul>
+          <li>meny (uten funksjonalitet men med menyvalg)</li>
+          <li>header (med logo)</li>
+          <li>minst to innholdsblokker med enkelt innhold (tekst, bilder)</li>
+          <li>footer</li>
+        </ul>
+
+    
+        <p>Bruk CSS Grid for å plassere disse elementene på siden. I tillegg skal siden være responsiv, slik at plasseringen av innholdet endres ved endring av bredden på nettleservinduet. Bruk id'er og klasser på disse elementene og elementer inni hver div slik at de kan styles med CSS. Tilslutt lager dere CSS for nettsiden. Hvis dere er flere som jobber sammen kan dere lage en CSS hver.</p>
+        <h3>Bruk ihvertfall:</h5>
+        <ul>
+          <li>margin</li>
+          <li>border</li>
+          <li>padding</li>
+          <li>background-color</li>
+          <li>background-image</li>
+          <li>lek litt med forskjellige fonter</li>
+        </ul>
+
+        <h1>Oppgave 2 - JavaScript</h1>
+        <h2>Legg til funksjonalitet ved bruk av JavaScript. JavaScript-kode inkluderes med en separat fil.</h2>
+        <h3>Funksjonalitet:</h3>
+
+        <ul>
+          <li>Knapp med tilhørende innholdsblokk/tekst som for eksempel øker et tall med 1 for hvert klikk.</li>
+          <li>Knapp med tilhørende innholdsblokk/tekst som skjuler/viser innholdet.</li>
+          <li>Opprett et array med tilfeldige stikkord, og gjengi innholdet som en liste på nettsiden (bruk ul & li tags) - kan bestemme selv om dette gjøres via knapp eller ved kjøring av nettsiden.</li>
+        </ul>
+
+        <p>Legg til tilhørende CSS til eventuelle knapper som legges til.</p>
+        <p><strong>frist for å ha øving godkjent: 20.01.2022</strong></p>
+            
+      </div>
+    </div>
+  </div>
+  
+
+  <div class="cards">
+    <div class="card" id="one">BACKGROUND</div>
+    <div class="card">
+      <div id="myDiv" style="display: none;">
+        This is my hidden div.
+      </div>
+      <button onclick="toggleVisibility('myDiv');">Toggle Visibility</button>
+    </div>
+    <div class="card">
+      <p id="numTag">0</p>
+      <button onclick="incrementNum('numTag');">Increment number</button> 
+    </div>
+    <div class="card" style="overflow-y: scroll;">
+      <button onclick="randomArray('randomList');">Genererate random list</button> 
+      <ul id="randomList"></ul>
+    </div>
+  </div>
+
+  
+</div>
+<footer>
+  <p><strong>2023</strong> - Av Stian Lyng NTNU</p>
+</footer>
+    <script src="jsfile.js"></script>
+  </body>
+</html>
+

@@ -40,6 +40,7 @@ body {
   
   .container {
     display: block;
+    position: relative;
     background-color: rgba(255, 255, 255, 0.35);
     padding: 3rem 4rem;
     border: 2px solid var(--color-text);
@@ -59,7 +60,7 @@ grid-row-gap: 10px;
 color: var(--color-text);
 }
     
-    
+
 
 .parent > div {
     text-align: center;
@@ -71,3 +72,22 @@ color: var(--color-text);
     color: var(--color-accent);
     background-color: var(--color-text);
 }
+
+.settings {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 10px;
+  margin-top: 2em;
+}
+
+.settings > div {
+  text-align: center;
+  border: 2px solid var(--color-text);
+  padding: 1em;
+}
+
+.settings > div:hover{
+    color: var(--color-accent);
+    background-color: var(--color-text);
+}
+

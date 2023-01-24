@@ -1,53 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Calculatex</title>
-    <!-- Import Styles -->
-    <link rel="stylesheet" href="./assets/styles.css" />
-    <!-- Import Vue.js -->
-    <script src="https://unpkg.com/vue@3.0.11/dist/vue.global.js"></script>
-  </head>
-  <body>
-       
 
-    <div id="app">
-        <div class="container">
-          <div class="preview">
-            <p>{{ equation }}</p>
-            <p id="result"> {{ result }}</p>
-          </div>
-        <div class="parent">
-            <div v-on:click="numberInput('7')">7</div>
-            <div v-on:click="numberInput('8')">8</div>
-            <div v-on:click="numberInput('9')">9</div>
-            <div v-on:click="numberInput(' + ')">+</div>
-            <div v-on:click="numberInput('4')">4</div>
-            <div v-on:click="numberInput('5')">5</div>
-            <div v-on:click="numberInput('6')">6</div>
-            <div v-on:click="numberInput(' - ')">-</div>
-            <div v-on:click="numberInput('1')">1</div>
-            <div v-on:click="numberInput('2')">2</div>
-            <div v-on:click="numberInput('3')">3</div>
-            <div v-on:click="numberInput(' / ')">/</div>
-            <div v-on:click="numberInput('0')">0</div>
-            <div v-on:click="numberInput('00')">00</div>
-            <div v-on:click="numberInput('.')">.</div>
-            <div v-on:click="numberInput(' * ')">*</div>
-        </div> 
+<head>
+  <meta charset="UTF-8" />
+  <title>Calculatex</title>
+  <!-- Import Styles -->
+  <link rel="stylesheet" href="./assets/styles.css" />
+  <!-- Import Vue.js -->
+  <script src="https://unpkg.com/vue@3.0.11/dist/vue.global.js"></script>
+</head>
 
+<body>
+
+
+  <div id="app">
+    <div class="container">
+      
+      
+      <div class="preview">
+        <p>{{ equation }}</p>
+        <p id="result"> {{ result }}</p>
       </div>
+      <div class="parent">
+        <div v-on:click="numberInput(7)">7</div>
+        <div v-on:click="numberInput(8)">8</div>
+        <div v-on:click="numberInput(9)">9</div>
+        <div @click="add()">+</div>
+        <div v-on:click="numberInput(4)">4</div>
+        <div v-on:click="numberInput(5)">5</div>
+        <div v-on:click="numberInput(6)">6</div>
+        <div @click="subtract()">-</div>
+        <div v-on:click="numberInput(1)">1</div>
+        <div v-on:click="numberInput(2)">2</div>
+        <div v-on:click="numberInput(3)">3</div>
+        <div @click="divide()">/</div>
+        <div v-on:click="numberInput(0)">0</div>
+        <div @click="equals()">=</div>
+        <div v-on:click="numberInput('.')">.</div>
+        <div @click="multiply()">*</div>
+      </div>
+
     </div>
+    
+    <div class="settings">
+      <div @click="clear()">Clear</div>
+      <div @click="backspace()">Backspace</div>
+      <div @click="logToggleButton()">Log</div>
+    </div>
+    
+    <div v-show="logToggle" style>
+      <ul>
+        <li v-for="logitem in log">{{ logitem }}
+      </ul>
+      </ul>
+    </div>
+  </div>
 
-    <!-- Import App -->
-    <script src="./main.js"></script>
+  <!-- Import App -->
+  <script src="./main.js"></script>
 
-    <!-- Import Components -->
-    <script src="./components/ProductDisplay.js"></script>
+  <!-- Import Components -->
+  <!-- <script src="./components/ProductDisplay.js"></script> -->
 
-    <!-- Mount App -->
-    <script>
-      const mountedApp = app.mount('#app')
-    </script>
-  </body>
+  <!-- Mount App -->
+  <script>
+    const mountedApp = app.mount('#app')
+  </script>
+</body>
+
 </html>

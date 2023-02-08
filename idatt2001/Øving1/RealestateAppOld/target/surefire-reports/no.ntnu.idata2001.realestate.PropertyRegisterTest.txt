@@ -1,0 +1,58 @@
+-------------------------------------------------------------------------------
+Test set: no.ntnu.idata2001.realestate.PropertyRegisterTest
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 6, Errors: 0, Skipped: 0, Time elapsed: 0.03 sec <<< FAILURE!
+no.ntnu.idata2001.realestate.PropertyRegisterTest.testAddProperty()  Time elapsed: 0.024 sec  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
+	at org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1124)
+	at no.ntnu.idata2001.realestate.PropertyRegisterTest.testAddProperty(PropertyRegisterTest.java:52)
+
+no.ntnu.idata2001.realestate.PropertyRegisterTest.testFindProperty()  Time elapsed: 0 sec  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <no.ntnu.idata2001.realestate.Property@ee7d9f1> but was: <null>
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
+	at org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1124)
+	at no.ntnu.idata2001.realestate.PropertyRegisterTest.testFindProperty(PropertyRegisterTest.java:73)
+
+no.ntnu.idata2001.realestate.PropertyRegisterTest.testFindAllPropertiesWithLotNumber()  Time elapsed: 0 sec  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
+	at org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1124)
+	at no.ntnu.idata2001.realestate.PropertyRegisterTest.testFindAllPropertiesWithLotNumber(PropertyRegisterTest.java:102)
+
+no.ntnu.idata2001.realestate.PropertyRegisterTest.testFindAllPropertiesByOwner()  Time elapsed: 0.001 sec  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
+	at org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1124)
+	at no.ntnu.idata2001.realestate.PropertyRegisterTest.testFindAllPropertiesByOwner(PropertyRegisterTest.java:142)
+
+no.ntnu.idata2001.realestate.PropertyRegisterTest.testGetAverageAreaOfProperties()  Time elapsed: 0.002 sec  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <957.9> but was: <0.0>
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
+	at org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:86)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:81)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:993)
+	at no.ntnu.idata2001.realestate.PropertyRegisterTest.testGetAverageAreaOfProperties(PropertyRegisterTest.java:179)
+
+no.ntnu.idata2001.realestate.PropertyRegisterTest.testGetNumberOfProperties()  Time elapsed: 0.001 sec  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <3> but was: <0>
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
+	at org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:510)
+	at no.ntnu.idata2001.realestate.PropertyRegisterTest.testGetNumberOfProperties(PropertyRegisterTest.java:208)
+

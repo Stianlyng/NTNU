@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="6" failures="6" name="no.ntnu.idata2001.realestate.PropertyRegisterTest" time="0.028" errors="0" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="java.vm.version" value="15.0.1+9-18"/>
+    <property name="sun.boot.library.path" value="/Users/arne/Library/Java/JavaVirtualMachines/openjdk-15.0.1/Contents/Home/lib"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/Shared/Dropbox/NTNU/Undervisning/IDATA2001 Programmering 2/2021/Prosjekter/Oblig 1/RealestateApp med bugs/RealestateApp"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=":"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="user.country" value="NO"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/Users/Shared/Dropbox/NTNU/Undervisning/IDATA2001 Programmering 2/2021/Prosjekter/Oblig 1/RealestateApp med bugs/RealestateApp"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="java.runtime.version" value="15.0.1+9-18"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.io.tmpdir" value="/var/folders/tj/53f155g91tn724y2z1cr0t3w0000gn/T/"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="maven.ext.class.path" value="/Applications/NetBeans/Apache NetBeans 12.2.app/Contents/Resources/NetBeans/netbeans/java/maven-nblib/netbeans-eventspy.jar"/>
+    <property name="classworlds.conf" value="/Applications/NetBeans/Apache NetBeans 12.2.app/Contents/Resources/NetBeans/netbeans/java/maven/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/arne/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="maven.conf" value="/Applications/NetBeans/Apache NetBeans 12.2.app/Contents/Resources/NetBeans/netbeans/java/maven/conf"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="59.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.16"/>
+    <property name="library.jansi.path" value="/Applications/NetBeans/Apache NetBeans 12.2.app/Contents/Resources/NetBeans/netbeans/java/maven/lib/jansi-native"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="user.home" value="/Users/arne"/>
+    <property name="user.timezone" value="Europe/Oslo"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="15"/>
+    <property name="user.name" value="arne"/>
+    <property name="java.class.path" value="/Applications/NetBeans/Apache NetBeans 12.2.app/Contents/Resources/NetBeans/netbeans/java/maven/boot/plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.version" value="15"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dmaven.ext.class.path=/Applications/NetBeans/Apache NetBeans 12.2.app/Contents/Resources/NetBeans/netbeans/java/maven-nblib/netbeans-eventspy.jar test"/>
+    <property name="java.home" value="/Users/arne/Library/Java/JavaVirtualMachines/openjdk-15.0.1/Contents/Home"/>
+    <property name="user.language" value="nb"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.version" value="15.0.1"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/Applications/NetBeans/Apache NetBeans 12.2.app/Contents/Resources/NetBeans/netbeans/java/maven"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.version.date" value="2020-10-20"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+  </properties>
+  <testcase classname="no.ntnu.idata2001.realestate.PropertyRegisterTest" name="no.ntnu.idata2001.realestate.PropertyRegisterTest.testAddProperty" time="0.024">
+    <failure message="expected: &lt;true&gt; but was: &lt;false&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;true&gt; but was: &lt;false&gt;
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
+	at org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1124)
+	at no.ntnu.idata2001.realestate.PropertyRegisterTest.testAddProperty(PropertyRegisterTest.java:52)
+</failure>
+    <system-out>addProperty
+</system-out>
+  </testcase>
+  <testcase classname="no.ntnu.idata2001.realestate.PropertyRegisterTest" name="no.ntnu.idata2001.realestate.PropertyRegisterTest.testFindProperty" time="0">
+    <failure message="expected: &lt;no.ntnu.idata2001.realestate.Property@ee7d9f1&gt; but was: &lt;null&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;no.ntnu.idata2001.realestate.Property@ee7d9f1&gt; but was: &lt;null&gt;
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
+	at org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1124)
+	at no.ntnu.idata2001.realestate.PropertyRegisterTest.testFindProperty(PropertyRegisterTest.java:73)
+</failure>
+    <system-out>findProperty
+</system-out>
+  </testcase>
+  <testcase classname="no.ntnu.idata2001.realestate.PropertyRegisterTest" name="no.ntnu.idata2001.realestate.PropertyRegisterTest.testFindAllPropertiesWithLotNumber" time="0">
+    <failure message="expected: &lt;true&gt; but was: &lt;false&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;true&gt; but was: &lt;false&gt;
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
+	at org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1124)
+	at no.ntnu.idata2001.realestate.PropertyRegisterTest.testFindAllPropertiesWithLotNumber(PropertyRegisterTest.java:102)
+</failure>
+    <system-out>findAllPropertiesWithLotNumber
+</system-out>
+  </testcase>
+  <testcase classname="no.ntnu.idata2001.realestate.PropertyRegisterTest" name="no.ntnu.idata2001.realestate.PropertyRegisterTest.testFindAllPropertiesByOwner" time="0.001">
+    <failure message="expected: &lt;true&gt; but was: &lt;false&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;true&gt; but was: &lt;false&gt;
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
+	at org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1124)
+	at no.ntnu.idata2001.realestate.PropertyRegisterTest.testFindAllPropertiesByOwner(PropertyRegisterTest.java:142)
+</failure>
+    <system-out>findAllPropertiesByOwner
+</system-out>
+  </testcase>
+  <testcase classname="no.ntnu.idata2001.realestate.PropertyRegisterTest" name="no.ntnu.idata2001.realestate.PropertyRegisterTest.testGetAverageAreaOfProperties" time="0.002">
+    <failure message="expected: &lt;957.9&gt; but was: &lt;0.0&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;957.9&gt; but was: &lt;0.0&gt;
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
+	at org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:86)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:81)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:993)
+	at no.ntnu.idata2001.realestate.PropertyRegisterTest.testGetAverageAreaOfProperties(PropertyRegisterTest.java:179)
+</failure>
+    <system-out>getAverageAreaOfProperties
+</system-out>
+  </testcase>
+  <testcase classname="no.ntnu.idata2001.realestate.PropertyRegisterTest" name="no.ntnu.idata2001.realestate.PropertyRegisterTest.testGetNumberOfProperties" time="0.001">
+    <failure message="expected: &lt;3&gt; but was: &lt;0&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;3&gt; but was: &lt;0&gt;
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
+	at org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:510)
+	at no.ntnu.idata2001.realestate.PropertyRegisterTest.testGetNumberOfProperties(PropertyRegisterTest.java:208)
+</failure>
+    <system-out>getNumberOfProperties
+</system-out>
+  </testcase>
+</testsuite>

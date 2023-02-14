@@ -23,13 +23,13 @@ public:
     
     public:
         
-        Workers(int num_threads) : num_threads(num_threads) {}
+        Workers(int num_threads) : num_threads(num_threads) {} // Initializes with the number of threads
         
         void start()
         {
-            for (int i = 0; i < num_threads; ++i)
+            for (int i = 0; i < num_threads; ++i) // Creates the threads
             {
-                threads.push_back(thread([&] {
+                threads.push_back(thread([&] { 
                     while (true)
                     {
                         function<void()> task;
@@ -39,15 +39,15 @@ public:
                                 unique_lock<mutex> lock(mutex_lock);
                                 if (!tasks.empty())
                                 {
-                                    task = *tasks.begin();
-                                    tasks.pop_front();
+                                    task = *tasks.begin(); // copies the task
+                                    tasks.pop_front(); // removes the task from the list
                                     break;
                                 }
                                 if (!run)
                                 {
                                     return;
                                 }
-                                cv.wait(lock);
+                                cv.wait(lock); // waits for a task to be posted
                             }
                         }
                             /*
@@ -64,16 +64,17 @@ public:
             }
         }
 
-    void post(function<void()> task)
+    void post(function<void()> task) // Posts a task to the queue
     {
         {
-            lock_guard<mutex> lock(mutex_lock);
-            tasks.push_back(task);
+            lock_guard<mutex> lock(mutex_lock); // Locks the mutex
+            tasks.push_back(task); // Adds the task to the list
         }
-        cv.notify_one();
+        cv.notify_one();    // Notifies one thread that a task has been posted 
+                            // Should i use notify_all() instead?                   ?
     }
 
-    void join()
+    void join() // Calls join() on all the threads
     {
         for (auto& thread : threads)
         {
@@ -81,15 +82,15 @@ public:
         }
     }
 
-    void post_timeout(function<void()> task, int timeout)
+    void post_timeout(function<void()> task, int timeout) // Posts a task to the queue after a timeout
     {
         thread([this, task, timeout] {
-            this_thread::sleep_for(chrono::milliseconds(timeout));
+            this_thread::sleep_for(chrono::milliseconds(timeout)); // Sleeps for the timeout
             post(task);
-        }).detach();
+        }).detach(); 
     }
 
-    void stop()
+    void stop() // Stops the threads
     {
         run = false;
         cv.notify_all();

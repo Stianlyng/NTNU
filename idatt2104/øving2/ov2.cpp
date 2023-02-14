@@ -70,7 +70,7 @@ public:
             lock_guard<mutex> lock(mutex_lock); // Locks the mutex
             tasks.push_back(task); // Adds the task to the list
         }
-        cv.notify_one();    // Notifies one thread that a task has been posted 
+        cv.notify_all();    // Notifies one thread that a task has been posted 
                             // Should i use notify_all() instead?                   ?
     }
 

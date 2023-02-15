@@ -5,6 +5,8 @@ import java.io.PrintWriter;
 import java.net.ServerSocket;
 import java.net.Socket;
 
+
+
 public class SocketTjener implements Runnable {
 
   private Socket socket; // denne variabelen brukes i run-metoden
@@ -28,8 +30,11 @@ public class SocketTjener implements Runnable {
       String enLinje = leseren.readLine(); // mottar en linje med tekst
       while (enLinje != null) { // forbindelsen på klientsiden er lukket
         System.out.println("En klient skrev: " + enLinje);
-        skriveren.println("Du skrev: " + enLinje); // sender svar til klienten
-        enLinje = leseren.readLine();
+        Calculator calc = new Calculator();
+        
+            skriveren.println("Resultat: " + Double.toString(calc.evaluate(enLinje)));
+
+            enLinje = leseren.readLine();
       }
       
       // Lukker forbindelsen
@@ -38,8 +43,22 @@ public class SocketTjener implements Runnable {
       socket.close(); // husk å lukke socketen
     } catch (IOException e) {
       e.printStackTrace();
-    }
+    } 
   }
+
+public String eval(String a) {
+  String operators[]=a.split("[0-9]+");
+  String operands[]=a.split("[+-]");
+  int agregate = Integer.parseInt(operands[0]);
+  for(int i=1;i<operands.length;i++){
+      if(operators[i].equals("+"))
+          agregate += Integer.parseInt(operands[i]);
+      else 
+          agregate -= Integer.parseInt(operands[i]);
+  }
+  return Integer.toString(agregate);
+}
+
 
   public static void main(String[] args) throws IOException {
     final int PORTNR = 1250;

@@ -24,8 +24,7 @@
      System.out.println("Nå er forbindelsen opprettet.");
  
      /* Åpner en forbindelse for kommunikasjon med tjenerprogrammet */
-     InputStreamReader leseforbindelse
-                       = new InputStreamReader(forbindelse.getInputStream());
+     InputStreamReader leseforbindelse = new InputStreamReader(forbindelse.getInputStream());
      BufferedReader leseren = new BufferedReader(leseforbindelse);
      PrintWriter skriveren = new PrintWriter(forbindelse.getOutputStream(), true);
  

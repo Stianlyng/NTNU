@@ -20,7 +20,7 @@ public class WebServer {
       while (true) {
          
           Socket clientSocket = serverSocket.accept();
-          System.err.println("Nouveau client connecté");
+          System.err.println("Client connected");
 
   
           BufferedReader in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));

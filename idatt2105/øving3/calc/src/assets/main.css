@@ -1,0 +1,21 @@
+:root {
+  --border-radius: 3px;
+}
+
+:root {
+  --color-background: #FA7D61;
+  --color-text: #1E1E24;
+  --color-accent: #F3601C;
+}
+
+body {
+  background-color: var(--color-background);
+  background: radial-gradient(var(--color-background), var(--color-accent));
+  background-size: 200%;
+  color: var(--color-text);
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}

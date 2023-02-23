@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Run Shell Command</title>
+  </head>
+  <body>
+    <h1>Run Shell Command</h1>
+    <form onsubmit="executeCommand(); return false;">
+      <label for="command">Command:</label>
+      <input type="text" id="command" name="command">
+      <button type="submit">Run</button>
+    </form>
+    <br>
+    <label for="output">Output:</label>
+    <textarea id="output" rows="10"></textarea>
+
+    <script>
+      function executeCommand() {
+        var command = document.getElementById("command").value;
+        const { exec } = require('child_process');
+        exec(command, (error, stdout, stderr) => {
+          if (error) {
+            console.error(`exec error: ${error}`);
+            return;
+          }
+          document.getElementById("output").value = stdout;
+        });
+      }
+    </script>
+  </body>
+</html>

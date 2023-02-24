@@ -49,13 +49,4 @@
    }
  }
  
- /* Utskrift på klientsiden:
- Oppgi navnet på maskinen der tjenerprogrammet kjører: tonje.aitel.hist.no
- Nå er forbindelsen opprettet.
- Hei, du har kontakt med tjenersiden!
- Skriv hva du vil, så skal jeg gjenta det, avslutt med linjeskift.
- Hallo, dette er en prove.
- Fra tjenerprogrammet: Du skrev: Hallo, dette er en prøve.
- Og det fungerer utmerket.
- Fra tjenerprogrammet: Du skrev: Og det fungerer utmerket.
- */
+ 

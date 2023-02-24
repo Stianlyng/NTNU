@@ -24,8 +24,10 @@ public class SocketTjener implements Runnable {
       
       // Sender innledning til klienten
       skriveren.println("Hei, du har kontakt med tjenersiden!");
-      skriveren.println("Skriv hva du vil, så skal jeg gjenta det, avslutt med linjeskift.");
+      skriveren.println("Smell opp et regnestykke kis!, avslutt med linjeskift.");
       
+      System.out.println("Klienten er koblet til på port " + socket.getPort());
+
       // Mottar data fra klienten
       String enLinje = leseren.readLine(); // mottar en linje med tekst
       while (enLinje != null) { // forbindelsen på klientsiden er lukket
@@ -63,6 +65,8 @@ public String eval(String a) {
   public static void main(String[] args) throws IOException {
     final int PORTNR = 1250;
     ServerSocket tjener = new ServerSocket(PORTNR);
+    System.out.println("Tjeneren lytter på port: " + PORTNR);
+
     System.out.println("Logg for tjenersiden. Nå venter vi...");
     
     while (true) {

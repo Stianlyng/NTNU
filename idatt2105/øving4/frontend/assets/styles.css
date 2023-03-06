@@ -1,0 +1,93 @@
+:root {
+    --border-radius: 3px;
+  }
+  
+  :root {
+    --color-background: #FA7D61;
+    --color-text: #1E1E24;
+    --color-accent: #F3601C;
+  }
+
+body {
+    background-color: var(--color-background);
+    background: radial-gradient(var(--color-background), var(--color-accent));
+    background-size: 200%;
+    color: var(--color-text);
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  .preview {
+    position: relative;
+    height: 100px;
+    border: 2px solid var(--color-text);
+    margin-bottom: 10px;
+    box-shadow: inset 4px 2px 0 0 var(--color-text);
+    padding-left: 0.5em;
+  }
+
+  .preview > p {
+    display: inline-block;
+  }
+
+    .preview > #result {
+        position: absolute;
+        right: 0.5em;
+        bottom: 0.5em;
+    }
+  
+  .container {
+    display: block;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.35);
+    padding: 3rem 4rem;
+    border: 2px solid var(--color-text);
+    box-shadow: 7px 6px 0 0 var(--color-text);
+    border-radius: var(--border-radius);
+    max-width: 500px;
+    transition: transform 0.35s;
+  }
+
+
+.parent {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+grid-template-rows: repeat(4, 1fr);
+grid-column-gap: 10px;
+grid-row-gap: 10px;
+color: var(--color-text);
+}
+    
+
+
+.parent > div {
+    text-align: center;
+    border: 2px solid var(--color-text);
+    padding: 2em;
+}
+
+.parent > div:hover{
+    color: var(--color-accent);
+    background-color: var(--color-text);
+}
+
+.settings {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 10px;
+  margin-top: 2em;
+}
+
+.settings > div {
+  text-align: center;
+  border: 2px solid var(--color-text);
+  padding: 1em;
+}
+
+.settings > div:hover{
+    color: var(--color-accent);
+    background-color: var(--color-text);
+}
+

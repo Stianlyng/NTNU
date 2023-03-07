@@ -1,0 +1,5 @@
+#!/bin/bash
+clear
+echo "Setting up logsystem"
+sudo pip install influxdb
+sudo docker-compose -f docker-compose-logging.yaml up -d

@@ -1,0 +1,12 @@
+/home/stian/code/NTNU/idatt1002/devops-workshop/src/main/java/data/User.java
+/home/stian/code/NTNU/idatt1002/devops-workshop/src/main/java/dao/Database.java
+/home/stian/code/NTNU/idatt1002/devops-workshop/src/main/java/data/GroupChat.java
+/home/stian/code/NTNU/idatt1002/devops-workshop/src/main/java/dao/UserDAO.java
+/home/stian/code/NTNU/idatt1002/devops-workshop/src/main/java/resources/MessageResource.java
+/home/stian/code/NTNU/idatt1002/devops-workshop/src/main/java/dao/MessageDAO.java
+/home/stian/code/NTNU/idatt1002/devops-workshop/src/main/java/resources/UserResource.java
+/home/stian/code/NTNU/idatt1002/devops-workshop/src/main/java/dao/GroupChatDAO.java
+/home/stian/code/NTNU/idatt1002/devops-workshop/src/main/java/websocket/Websocket.java
+/home/stian/code/NTNU/idatt1002/devops-workshop/src/main/java/data/Message.java
+/home/stian/code/NTNU/idatt1002/devops-workshop/src/main/java/resources/CalculatorResource.java
+/home/stian/code/NTNU/idatt1002/devops-workshop/src/main/java/resources/GroupChatResource.java

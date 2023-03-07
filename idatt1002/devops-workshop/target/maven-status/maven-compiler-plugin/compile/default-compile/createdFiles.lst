@@ -1,0 +1,13 @@
+dao/Database.class
+resources/GroupChatResource.class
+websocket/Websocket.class
+data/Message.class
+resources/UserResource.class
+resources/CalculatorResource.class
+dao/MessageDAO.class
+resources/MessageResource.class
+dao/UserDAO.class
+data/User.class
+resources/UserResource$1.class
+dao/GroupChatDAO.class
+data/GroupChat.class

@@ -1,0 +1,17 @@
+/home/stian/Code/paths/src/main/java/edu/ntnu/g60/actions/Action.java
+/home/stian/Code/paths/src/main/java/edu/ntnu/g60/goals/ScoreGoal.java
+/home/stian/Code/paths/src/main/java/edu/ntnu/g60/actions/GoldAction.java
+/home/stian/Code/paths/src/main/java/edu/ntnu/g60/Passage.java
+/home/stian/Code/paths/src/main/java/edu/ntnu/g60/StoryParser.java
+/home/stian/Code/paths/src/main/java/edu/ntnu/g60/Link.java
+/home/stian/Code/paths/src/main/java/edu/ntnu/g60/actions/InventoryAction.java
+/home/stian/Code/paths/src/main/java/edu/ntnu/g60/Player.java
+/home/stian/Code/paths/src/main/java/edu/ntnu/g60/Story.java
+/home/stian/Code/paths/src/main/java/edu/ntnu/g60/actions/HealthAction.java
+/home/stian/Code/paths/src/main/java/edu/ntnu/g60/goals/Goal.java
+/home/stian/Code/paths/src/main/java/edu/ntnu/g60/Game.java
+/home/stian/Code/paths/src/main/java/edu/ntnu/g60/goals/GoldGoal.java
+/home/stian/Code/paths/src/main/java/edu/ntnu/g60/actions/ScoreAction.java
+/home/stian/Code/paths/src/main/java/edu/ntnu/g60/goals/InventoryGoal.java
+/home/stian/Code/paths/src/main/java/edu/ntnu/g60/goals/HealthGoal.java
+/home/stian/Code/paths/src/main/java/edu/ntnu/g60/ApplicationFront.java

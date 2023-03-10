@@ -25,10 +25,19 @@ const app = Vue.createApp({
         divide(){
             this.equation += " / ";
         },
-        equals(){
-            this.result = eval(this.equation)
-            this.log.push(this.equation + " = " + eval(this.equation));
-        },
+        equals() {
+            const url = 'http://localhost:8080/greeting?name=' + encodeURIComponent(this.equation);
+          
+            fetch(url)
+              .then(response => response.json())
+              .then(data => {
+                this.result = data.content;
+                this.log.push(this.equation + " = " + data.content);
+              })
+              .catch(error => {
+                console.error('Error:', error);
+              });
+          },          
         clear(){
             this.result = "";
             this.equation = "";

@@ -49,7 +49,16 @@ export default {
         },
         logToggleButton() {
             this.logToggle = !this.logToggle;
-        }
+        },
+        calcApi() {
+          axios.get("http://localhost:8080/greeting", { params: { name: this.equation } })
+          .then(response => {
+            this.result = response.data;
+            this.log.push(`${this.equation} = ${response.data}`);
+          })
+          .catch(error => console.error(error));
+      }
+
     }
 };
 </script>
@@ -75,7 +84,7 @@ export default {
        <div v-on:click="numberInput(3)">3</div>
        <div @click="divide()">/</div>
        <div v-on:click="numberInput(0)">0</div>
-       <div @click="equals()">=</div>
+       <div @click="calcApi()">=</div>
        <div v-on:click="numberInput('.')">.</div>
        <div @click="multiply()">*</div>
      </div>
